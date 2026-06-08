@@ -82,7 +82,7 @@ js-node-express-explore-api/
 - **Node.js** ≥ 18 (recommend v22 LTS)
 - **npm** ≥ 10
 - **PostgreSQL** running locally (default port 5432)
-- Database `go_explore` created with the DDL and seed data applied
+- Database `js_explore` created with the DDL and seed data applied
 
 ---
 
@@ -101,8 +101,8 @@ npm install
 Connect to your PostgreSQL instance and run the SQL files in order:
 
 ```bash
-psql -U postgres -d go_explore -f sql/ddl.sql
-psql -U postgres -d go_explore -f sql/dml.sql
+psql -U postgres -d js_explore -f sql/ddl.sql
+psql -U postgres -d js_explore -f sql/dml.sql
 ```
 
 Or via DBeaver / any SQL client — execute `sql/ddl.sql` first, then `sql/dml.sql`.
@@ -122,7 +122,7 @@ LOG_LEVEL=info
 
 DB_HOST=localhost
 DB_PORT=5432
-DB_NAME=go_explore
+DB_NAME=js_explore
 DB_USER=postgres
 DB_PASSWORD=your_password_here
 DB_POOL_MAX=10
@@ -504,7 +504,7 @@ An `updated_at` trigger (`trg_users_updated_at`) automatically sets `updated_at 
 | `LOG_LEVEL` | `info` | Winston log level (`error`/`warn`/`info`/`debug`) |
 | `DB_HOST` | `localhost` | PostgreSQL host |
 | `DB_PORT` | `5432` | PostgreSQL port |
-| `DB_NAME` | `go_explore` | Database name |
+| `DB_NAME` | `js_explore` | Database name |
 | `DB_USER` | `postgres` | Database user |
 | `DB_PASSWORD` | _(empty)_ | Database password |
 | `DB_POOL_MAX` | `10` | Max connections in pool |
