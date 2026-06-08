@@ -1,4 +1,4 @@
-# js-node-express-explore-api
+# NodeJS Explore API
 
 A simple REST API built with **Node.js + Express** and **PostgreSQL** for user management. Designed as an exploration project covering CRUD operations, request/response echo, health check, structured logging with per-request trace IDs, and layered architecture.
 
